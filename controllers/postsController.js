@@ -2,7 +2,6 @@ const AppError = require("../utils/AppError");
 const { parsePagination } = require("../utils/pagination");
 const { validatePostBody, parsePositiveInt } = require("../utils/validation");
 const postsService = require("../services/postsService");
-const toggleLike = require("../services/postsService");
 
 exports.createPost = async (req, res) => {
   const errors = validatePostBody(req.body);
